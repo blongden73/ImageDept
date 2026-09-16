@@ -2,7 +2,7 @@
   "name": "visionary-carousel",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME",
+  "homepage": "https://blongden73.github.io/ImageDept",
   "type": "module",
   "scripts": {
     "dev": "vite",
