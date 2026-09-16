@@ -150,9 +150,9 @@ export default function App() {
         </header>
 
         {/* Center Single Line Text Overlay */}
-        <main className="flex-1 flex items-center justify-center">
+        <main className="flex-1 flex items-center justify-center title-id">
           <motion.p 
-            className="text-sm md:text-base font-light uppercase tracking-[0.3em] text-white/90 text-center px-4"
+            className="text-sm md:text-base uppercase tracking-[0.1em] text-white/90 text-center px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={introDone ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6, duration: 1, ease: [0.25, 1, 0.5, 1] }}
