@@ -130,23 +130,35 @@ export default function App() {
             <path d="M0 121.666V2.88477H19.1746V121.666H0Z" fill="white"/>
             </svg>
           </motion.div>
+
+          {/* Nav links (Contact & Instagram) - Displays on all screen sizes */}
           <motion.nav 
-            className="space-x-8 text-xs font-semibold uppercase tracking-[0.15em] hidden md:block"
+            className="flex items-center space-x-6 text-xs font-semibold uppercase tracking-[0.15em]"
             initial={{ opacity: 0, y: -20 }}
             animate={introDone ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
+            <a 
+              href="mailto:hola@imagedept.studio" 
+              className="hover:text-gray-300 transition-colors pointer-events-auto"
+            >
+              Contact
+            </a>
+            <a 
+              href="https://instagram.com/imagedept.studio" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-gray-300 transition-colors pointer-events-auto flex items-center gap-1.5"
+              aria-label="Instagram"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Instagram</span>
+            </a>
           </motion.nav>
-          
-          {/* Mobile menu icon */}
-          <motion.button 
-            className="md:hidden pointer-events-auto"
-            initial={{ opacity: 0 }}
-            animate={introDone ? { opacity: 1 } : {}}
-            transition={{ delay: 0.3 }}
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-          </motion.button>
         </header>
 
         {/* Center Single Line Text Overlay */}
